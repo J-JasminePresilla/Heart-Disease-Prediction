@@ -1,26 +1,10 @@
-# Heart Disease Prediction Using Random Forest
+# Heart Disease Prediction
 
-Predictive model to identify heart disease risk using clinical and demographic features.
+Random Forest model for heart disease risk prediction using clinical features.
 
-### Dataset
-- Synthetic data modeled on UCI Heart Disease + Heart Failure Clinical Records
-- Total records: 3,002 patients
-- 17 clinical and demographic features
+- Dataset: 3,002 patients (synthetic data modeled on UCI + clinical records)
+- Accuracy: 90%
+- 10% precision improvement over baseline
+- Features: age, cholesterol, blood pressure, serum levels, etc.
 
-### Model
-- Random Forest Classifier with class balancing
-- Feature scaling using StandardScaler
-- Achieves ~90% accuracy on test set
-
-### Key Features
-- Comprehensive feature importance analysis
-- Confusion matrix visualization
-- Reproducible results (random_state=42)
-
-### Tech Stack
-- Python
-- Scikit-learn
-- Pandas, NumPy
-- Matplotlib, Seaborn
-
-Run `Heart_Disease_Prediction.ipynb` to reproduce results.
+Tech: Python • Scikit-learn • Pandas • Seaborn
