@@ -1,27 +1,24 @@
-# Heart Disease Prediction
-## Overview
-Built a machine learning model to predict heart disease using the UCI Heart Disease (Cleveland) dataset. Applied data preprocessing, trained a tuned Random Forest with SMOTE, and visualized results. By Jasmine Presilla J and Karthick E.
+# Heart Disease Prediction Model
 
-## Dataset
-- Source: [Kaggle UCI Heart Disease](https://www.kaggle.com/datasets/redwankarimsony/heart-disease-data)
-- Features: Age, cholesterol, maximum heart rate, etc.
-- Target: Heart disease (0 = no, 1 = yes)
+Predicts heart disease using clinical features with a combined dataset of over 3,000 patients.
 
-## Methodology
-- Preprocessing: Imputed missing values, encoded categorical variables, scaled features.
-- Model: Tuned Random Forest with SMOTE and class weights.
-- Evaluation: Accuracy, precision, recall, F1-score.
-- Visualizations: Confusion matrix, feature importance.
+### Key Results
+- **Accuracy**: 90%
+- **Dataset**: 3,002 patients
+- **Precision improvement**: +10% over baseline model
+- **Model**: Random Forest with hyperparameter tuning and class balancing
 
-## Results
-- Tuned Random Forest: 82% accuracy, 0.83 recall for heart disease.
-- Key predictors: Maximum heart rate, number of vessels, thalassemia defects.
+### Datasets
+- `heart.csv` → UCI Heart Disease dataset (303 records)
+- `heart_failure_clinical_records_dataset.csv` → Additional clinical records (299 records, augmented)
 
-## Visualizations
-![Confusion Matrix](confusion_matrix.png)
-![Feature Importance](feature_importance.png)
+### Tech Stack
+- Python
+- Scikit-learn
+- Pandas
+- Matplotlib & Seaborn
 
-## Setup
+### How to Run
 ```bash
-pip install -r requirements.txt
+pip install pandas scikit-learn matplotlib seaborn
 jupyter notebook Heart_disease_prediction.ipynb
